@@ -1,0 +1,88 @@
+body
+{
+    background-color: wheat;
+}
+.item1
+{
+    
+ width: 49%;
+ height: auto;
+ float:left;
+ background-color: white;
+ margin: 3px;
+ padding: 2px;
+ 
+ 
+}
+.i1{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+img
+{
+    margin: 5px;
+}
+.product
+{
+    width: 70%;
+    height: auto;
+    float:left;
+    margin-left: 10px;
+    font-size: 18px;
+        
+}
+p{
+    margin: 2px;
+}
+
+#btn1{
+    
+    margin: 2%;
+    margin-left: 40%;
+    border-radius: 5px;
+    background-color:lightcoral;
+}
+#btn2{
+    
+    margin: 2%;
+    border-radius: 5px;
+    background-color: lightblue;
+    
+}
+.item2
+{
+ width: 49%;
+ height: auto;
+ float:left;
+ background-color: white;
+ margin: 3px;
+ padding: 2px
+
+
+}
+.item3
+{
+ width: 49%;
+ height: auto;
+ float:left;
+ background-color: white;
+ margin: 3px;
+ padding: 2px
+
+
+}
+.item4
+{
+ width: 49%;
+ height: auto;
+ float:left;
+ background-color: white;
+ margin: 3px;
+ padding: 2px
+
+
+}
+p{
+    margin-left: 40%;
+}

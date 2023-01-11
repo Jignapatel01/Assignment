@@ -1,0 +1,53 @@
+body
+{
+    background-color:yellowgreen;
+}
+form
+{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 3%;
+
+}
+h2{
+    margin-left: 25px;
+}
+.form-detail
+{
+    width:100%;
+    height:auto;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 20px ;
+    background-color: rgb(189, 220, 128);
+}
+label{
+    font-size: 20px;
+    padding: 5%;
+}
+input{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input[type="radio"]
+{
+    width: 40px;
+    margin: 5px;
+    margin-left: 10%;
+}
+input[type="submit"]
+{
+    width: 30%;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 40%;
+    color: white;
+    font-size: 20px;
+
+}

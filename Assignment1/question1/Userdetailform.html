@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='userform.css'>
+    <link rel="stylesheet"  href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <form>
+       <h2> Step 1:Your detail </h2>
+   <div class="form-detail">
+    <label> Name</label>
+     <input type="text" name="name" placeholder="First and Last Name" required>            
+   </div>
+   <div class="form-detail">
+    <label> Email</label>
+    <input type="email" name="email" placeholder="example@domain.com" required>
+</div>
+<div class="form-detail">
+    <label> Phone</label>
+    <input type="tel" name="Phone" placeholder="ex. +918596457532" required>
+</div>
+
+<h2> Step 2: Delivery Address </h2>
+<div class="form-detail">
+    <label> Address </label>
+     <textarea name="Address" placeholder="address"></textarea>            
+   </div>
+   <div class="form-detail">
+    <label> Post Code</label>
+    <input type="text" name="postcode" placeholder="Postcode" required>
+</div>
+<div class="form-detail">
+    <label> Country</label>
+    <input type="text" name="Country"  required>
+</div>
+<h2> Step 3: Card Detail </h2>
+<div class="form-detail">
+    <label> Card Type </label><br>
+     <input type="radio" name="card" value="visa"><span class="fa fa-cc-visa"></span>Visa 
+     <input type="radio" name="amex" value="AmEx"><span class="fa fa-cc-AmEx"></span>AmEx
+     <input type="radio" name="mastercard" value="Mastercard"><span class="fa fa-cc-mastercard"></span>Mastercard
+   </div>
+   <div class="form-detail">
+    <label> Card Number</label>
+    <input type="number" name="card number" placeholder="Card Number" required>
+</div>
+<div class="form-detail">
+    <label> Security Code</label>
+    <input type="text" name="Security code" placeholder="Security Code"  required>
+</div>
+<div class="form-detail">
+    <label> Name on Card</label>
+    <input type="text" name="name on card" placeholder="Name on Card"  required>
+</div>
+<input type="submit" name="Buy it" value="BUY IT!"
+</form>
+</body>
+</html>
