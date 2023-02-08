@@ -1,0 +1,55 @@
+
+	Topic – SQL Task-1
+	TABLE: - Employee
+	TABLE: - Incentives
+
+a) Get First_Name from employee table using alias name “Employee Name”.
+ANS:- SELECT FIRST_NAME AS EMPLOYEE_NAME FROM EMPLOYEE;
+
+
+b) Get FIRST_NAME, Joining year, Joining Month and Joining Date from employee table.
+ANS :-SELECT FIRST_NAME , JOINING_DATE FROM employee;
+
+
+C) Get all employee details from the employee table order by First Name Ascending And Salary    descending?
+ANS:-SELECT *FROM employee ORDER BY FIRST_NAME OR SALARY DESC;
+
+
+d) Get employee details from employee table whose first name contains „o‟.
+ANS:-SELECT * fROM employee WHERE FIRST_NAME LIKE 'O%';
+
+
+e) Get employee details from employee table whose joining month is “January”.
+ANS:- SELECT * from employee WHERE Joining_date between '2022-01-01' and '2022-01-31'; 
+
+
+f) Get department, total salary with respect to a department from employee table
+   Order By total salary descending.
+ANS:-SELECT Department, Salary from employee ORDER by Salary DESC;
+
+
+g) Get department wise maximum salary from employee table order by salary
+   ascending? 
+Ans:- SELECT Department, MAX(Salary) from employee ORDER by Salary asc;
+
+
+h) Select first_name, incentive amount from employee and incentives table for those
+   Employees who have incentives and incentive amount greater than 3000.
+ANS:-SELECT employee.*,incentive_amt from employee join incentives on employee.Em_id=incentives.insentive_id where incentives.incentive_amt>3000;
+
+
+i) Select 2nd Highest salary from employee table.
+ANS :- select max(salary) from employee where salary < (SELECT max(salary) from employee); 
+
+j) Select first_name, incentive amount from employee and incentives table for all
+   Employees who got incentives using left join.
+Ans:- SELECT incentives.*,First_name from incentives left join employee on                   incentives.employee_ref_id=employee.Em_id;
+
+k) Create View OF Employee table in which store first name, last name and salary
+   only.
+Ans:- SELECT First_name,Last_name,Salary from employee;
+
+l) Create Procedure to find out department wise highest salary.
+Ans:- SELECT Em_id, max(Salary) ,Department from employee GROUP by Department;
+
+
