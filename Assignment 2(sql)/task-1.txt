@@ -45,11 +45,6 @@ j) Select first_name, incentive amount from employee and incentives table for al
    Employees who got incentives using left join.
 Ans:- SELECT incentives.*,First_name from incentives left join employee on                   incentives.employee_ref_id=employee.Em_id;
 
-k) Create View OF Employee table in which store first name, last name and salary
-   only.
-Ans:- SELECT First_name,Last_name,Salary from employee;
 
-l) Create Procedure to find out department wise highest salary.
-Ans:- SELECT Em_id, max(Salary) ,Department from employee GROUP by Department;
 
 
