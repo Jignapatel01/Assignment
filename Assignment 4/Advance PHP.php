@@ -63,3 +63,67 @@ Ans=> When we create an abstract class we never create an object of abstract.
  Ans=> constructor is a same name of class when we create an object of 
        class constructor automatically called.
        Constuct function start with two underscores(__) like __constuct.
+
+Q-9. How to call parent constructer?
+Ans=>Parent constructors are not called implicitly if the child class defines a constructor. 
+    In order to run a parent constructor, a call to parent::__construct(). within the child constructor is required. 
+    
+Q-10. How to call parent constructer?
+Ans=>  parent::__constucter
+
+Q-11. Are Parent Constructor Called Implicitly When Create An ObjectOf Class? 
+Ans=>  Parent constructors are not called implicitly if the child class defines a constructor.
+
+Q-12. What Happen, If Constructor Is Defined As Private Or Protected?
+Ans=>  If a constructor is declared as private, then its objects are only accessible from within class. 
+       You cannot access its objects from outside the constructor class.
+
+Q-13. Create multiple Traits and use it in to a single class?
+            <?php
+
+                trait disaplay
+                {
+                    public function test1()
+                    {
+                        echo " Hello ! Welcome to my page.";
+                    }
+                }
+                trait display2
+                {
+                    public function test2()
+                    {
+                        echo "My name is palak";
+                    }
+                }
+                class welcome
+                {
+                    use display , display2
+                }
+                $disp=new welcome()
+                $disp->display;
+                $disp->display2;
+            ?>
+
+ Q-14. Write PHP Script of Object Iteration?
+
+
+    Q-15. Use of The $this keyword 
+        <?php
+            class A 
+        {
+            public $a=10;
+            public  $b=20;
+            public function test()
+            {
+                return $this->a+$this->b;
+       
+            }
+        }
+        $obj=new A;
+        echo "additions of numbers is :".$obj->test();  
+
+        ?>
+
+
+
+
